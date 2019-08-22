@@ -16,8 +16,8 @@ class Tile extends React.Component<TileProps, TileState> {
   }
 }
 
-const getLinks: React.FC = () => {
-  return <div className={styles.linksWrapper} />;
-};
+// const getLinks: React.FC = () => {
+//   return <div className={styles.linksWrapper} />;
+// };
 
 export default Tile;

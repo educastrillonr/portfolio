@@ -1,12 +1,12 @@
 import * as React from "react";
 import { Router, Redirect } from "@reach/router";
-import Tile from "../../components/Tile/Tile";
+import Tiles from "../Tiles/Tiles";
 
 const Routes: React.FC = () => {
   return (
     <Router>
       <Redirect noThrow from="/" to="/portfolio" />
-      <Tile path="portfolio" />
+      <Tiles path="/portfolio" />
     </Router>
   );
 };

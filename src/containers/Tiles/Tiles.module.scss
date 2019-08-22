@@ -1,0 +1,28 @@
+.container {
+  padding: 1rem 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: red solid 1px;
+  box-sizing: border-box;
+
+  .wrapper {
+    border: blue solid 1px;
+    align-items: center;
+    display: grid;
+    width: 300px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 2fr));
+    grid-gap: 12px;
+    align-items: center;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .container {
+    padding: 4rem 2rem;
+    .wrapper {
+      width: 100%;
+    }
+  }
+}
