@@ -1,28 +1,17 @@
 .container {
   padding: 1rem 0;
   width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border: red solid 1px;
-  box-sizing: border-box;
-
-  .wrapper {
-    border: blue solid 1px;
-    align-items: center;
-    display: grid;
-    width: 300px;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 2fr));
-    grid-gap: 12px;
-    align-items: center;
-  }
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 2fr));
+  grid-gap: 12px;
+  width: 300px;
+  margin: 0 auto;
 }
 
 @media only screen and (min-width: 768px) {
   .container {
+    width: 100%;
     padding: 4rem 2rem;
-    .wrapper {
-      width: 100%;
-    }
   }
 }

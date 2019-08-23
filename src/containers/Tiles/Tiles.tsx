@@ -5,14 +5,17 @@ import styles from "./Tiles.module.scss";
 const Tiles: React.FC = () => {
   return (
     <section className={styles.container}>
-      <div className={styles.wrapper}>
-        <Tile />
-        <Tile />
-        <Tile />
-        <Tile />
-        <Tile />
-        <Tile />
-      </div>
+      {/* <div className={styles.wrapper}> */}
+      <Tile />
+      <Tile />
+      <Tile />
+      <Tile />
+      <Tile />
+      <Tile />
+      <Tile />
+      <Tile />
+
+      {/* </div> */}
     </section>
   );
 };

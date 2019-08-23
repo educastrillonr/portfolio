@@ -3,7 +3,7 @@ import "./App.css";
 import Routes from "./containers/Routes/Routes";
 import Header from "./containers/Header/Header";
 import Social from "./containers/Social/Social";
-// import Tile from "./components/Tile/Tile";
+import Footer from "./containers/Footer/Footer";
 
 const App: React.FC = () => {
   return (
@@ -13,6 +13,7 @@ const App: React.FC = () => {
         <Social />
         <Routes />
       </section>
+      <Footer />
     </div>
   );
 };
