@@ -2,6 +2,43 @@
   background: rgb(216, 219, 226);
   width: 100%;
   height: 100%;
-  min-height: 100px;
-  max-height: 160px;
+  height: 160px;
+  display: flex;
+  justify-content: space-between;
+
+  .logo {
+    height: 100%;
+    width: 100%;
+    width: 160px;
+    border: red solid 1px;
+  }
+  nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border: black solid 1px;
+    a {
+      padding: 0.5rem;
+      min-width: 150px;
+      text-decoration: none;
+      color: white;
+      font-weight: 600;
+      text-shadow: 1px;
+      text-transform: uppercase;
+
+      &:hover {
+        background: rgb(88, 164, 176);
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .header {
+    justify-content: flex-start;
+
+    nav {
+      margin-left: 4rem;
+    }
+  }
 }
