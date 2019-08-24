@@ -14,7 +14,7 @@ export interface TileState {}
 class Tile extends React.Component<TileProps, TileState> {
   // state = { :  }
 
-  getLinks = () => {
+  getTags = () => {
     return (
       <div className={styles.tagsWrapper}>
         {this.props.tags.map((tag: string, index: number) => (
@@ -24,16 +24,28 @@ class Tile extends React.Component<TileProps, TileState> {
     );
   };
 
+  getCode = () => {
+    if (this.props.code !== "#") {
+      return (
+        <a target="_blank" href={this.props.code}>
+          code
+        </a>
+      );
+    }
+  };
+
   render() {
     return (
       <article className={styles.wrapper}>
-        <img src="http://placekitten.com/g/300/169" alt="" />
+        <img src={this.props.img} alt="" />
         <div className={styles.overlay}></div>
         <div className={styles.linksWrapper}>
-          <Link to="#">demo</Link>
-          <Link to="#">code</Link>
+          <a target="_blank" href={this.props.demo}>
+            demo
+          </a>
+          {this.getCode()}
         </div>
-        {this.getLinks()}
+        {this.getTags()}
       </article>
     );
   }
