@@ -1,5 +1,5 @@
 import React from "react";
-import "./App.css";
+import "./App.scss";
 import Routes from "./containers/Routes/Routes";
 import Header from "./containers/Header/Header";
 import Social from "./containers/Social/Social";

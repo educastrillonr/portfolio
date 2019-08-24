@@ -1,5 +1,7 @@
+@import "../../variables.scss";
+
 .header {
-  background: rgb(216, 219, 226);
+  background: $beige;
   width: 100%;
   height: 100%;
   height: 160px;
@@ -27,7 +29,7 @@
       text-transform: uppercase;
 
       &:hover {
-        background: rgb(88, 164, 176);
+        background: $turqoise;
       }
     }
   }
