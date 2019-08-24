@@ -13,7 +13,7 @@ const App: React.FC = () => {
         <Social />
         <Routes />
       </section>
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 };

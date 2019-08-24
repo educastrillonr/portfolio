@@ -8,6 +8,8 @@
   display: flex;
   justify-content: space-between;
   box-shadow: $shadow;
+  position: absolute;
+  top: 0;
 
   .logo {
     height: 100%;
@@ -24,7 +26,6 @@
       text-decoration: none;
       color: white;
       font-weight: 600;
-      text-shadow: 1px;
       text-transform: uppercase;
 
       &:hover {
