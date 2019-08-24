@@ -16,7 +16,7 @@ const info: TileProps[] = [
   {
     demo: "3",
     code: "3",
-    tags: ["3"],
+    tags: ["3", "extra"],
     img: "bla"
   },
   {
