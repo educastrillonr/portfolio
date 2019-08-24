@@ -1,3 +1,5 @@
+@import "../../variables.scss";
+
 .container {
   padding: 1rem 0;
   width: 100%;
@@ -7,6 +9,7 @@
   grid-gap: 48px;
   width: 300px;
   margin: 0 auto;
+  // background: $dark-blue;
 }
 
 @media only screen and (min-width: 768px) {

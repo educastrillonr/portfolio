@@ -12,10 +12,7 @@
   a {
     color: $beige;
     text-decoration: none;
-    // text-shadow: $shadow;
     &:hover {
-      a {
-      }
       .icon {
         color: $turqoise;
         transition: 0.4s ease;
@@ -30,6 +27,5 @@
     flex-direction: column;
     min-height: 500px;
     width: 72px;
-    // margin-left: 1rem;
   }
 }
