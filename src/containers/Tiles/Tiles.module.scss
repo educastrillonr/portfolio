@@ -4,14 +4,19 @@
   height: 100%;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 2fr));
-  grid-gap: 12px;
+  grid-gap: 48px;
   width: 300px;
   margin: 0 auto;
 }
 
 @media only screen and (min-width: 768px) {
   .container {
-    width: 100%;
+    width: 650px;
+  }
+}
+@media only screen and (min-width: 1310px) {
+  .container {
+    width: 90%;
     padding: 4rem 2rem;
   }
 }

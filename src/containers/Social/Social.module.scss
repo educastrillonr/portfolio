@@ -1,15 +1,35 @@
+@import "../../variables.scss";
 .wrapper {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-evenly;
+  align-items: center;
   margin-left: 0;
-  margin-top: 1rem;
+  height: 72px;
+  background: $black;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.75);
+
+  a {
+    color: $beige;
+    text-decoration: none;
+    // text-shadow: $shadow;
+    &:hover {
+      a {
+      }
+      .icon {
+        color: $turqoise;
+        transition: 0.4s ease;
+        transform: scale(1.1);
+      }
+    }
+  }
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1310px) {
   .wrapper {
     flex-direction: column;
-    height: 500px;
-    margin-left: 1rem;
+    min-height: 500px;
+    width: 72px;
+    // margin-left: 1rem;
   }
 }

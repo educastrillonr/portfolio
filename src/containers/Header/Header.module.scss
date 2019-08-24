@@ -1,7 +1,7 @@
 @import "../../variables.scss";
 
 .header {
-  background: $beige;
+  background: $black;
   width: 100%;
   height: 100%;
   height: 160px;
@@ -13,7 +13,6 @@
     height: 100%;
     width: 100%;
     width: 160px;
-    border: red solid 1px;
   }
   nav {
     display: flex;
@@ -35,7 +34,7 @@
   }
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1310px) {
   .header {
     justify-content: flex-start;
 

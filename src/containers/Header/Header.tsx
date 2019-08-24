@@ -1,5 +1,6 @@
 import * as React from "react";
 import styles from "./Header.module.scss";
+import logo from "../../assets/images/logo.png";
 import { Link } from "@reach/router";
 
 const Header: React.FC = () => {
@@ -9,7 +10,7 @@ const Header: React.FC = () => {
 
   return (
     <header className={styles.header}>
-      <div className={styles.logo} />
+      <img className={styles.logo} src={logo} />
       <nav>
         <Link to="/portfolio">Portfolio</Link>
         <Link to="/about-me">About me</Link>
