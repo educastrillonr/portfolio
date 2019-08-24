@@ -10,7 +10,9 @@ const Header: React.FC = () => {
 
   return (
     <header className={styles.header}>
-      <img className={styles.logo} src={logo} />
+      <Link to="/">
+        <img className={styles.logo} src={logo} />
+      </Link>
       <nav>
         <Link to="/portfolio">Portfolio</Link>
         <Link to="/about-me">About me</Link>
