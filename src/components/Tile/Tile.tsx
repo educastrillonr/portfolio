@@ -1,6 +1,5 @@
 import * as React from "react";
 import styles from "./Tile.module.scss";
-import { Link } from "@reach/router";
 
 export interface TileProps {
   demo: string;
@@ -38,7 +37,7 @@ class Tile extends React.Component<TileProps, TileState> {
     return (
       <article className={styles.wrapper}>
         <img src={this.props.img} alt="" />
-        <div className={styles.overlay}></div>
+        <div className={styles.overlay} />
         <div className={styles.linksWrapper}>
           <a target="_blank" href={this.props.demo}>
             demo
