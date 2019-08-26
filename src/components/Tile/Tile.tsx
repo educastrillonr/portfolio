@@ -15,11 +15,11 @@ class Tile extends React.Component<TileProps, TileState> {
 
   getTags = () => {
     return (
-      <div className={styles.tagsWrapper}>
+      <ul className={styles.tagsWrapper}>
         {this.props.tags.map((tag: string, index: number) => (
-          <p key={index}>{tag}</p>
+          <li key={index}>{tag}</li>
         ))}
-      </div>
+      </ul>
     );
   };
 

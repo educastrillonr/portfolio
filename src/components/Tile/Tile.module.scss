@@ -75,7 +75,8 @@
 
 .tagsWrapper {
   display: none;
-  p {
+  li {
+    list-style-type: none;
     border-radius: 3px;
     font-size: 0.75em;
     background: $black;

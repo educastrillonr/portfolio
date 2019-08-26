@@ -1,5 +1,32 @@
 @import "../../variables.scss";
 
 .wrapper {
-  border: red solid 1px;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  padding: 4rem 2rem;
+  border: black solid 1px;
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    border: red solid 1px;
+    font-size: 2em;
+
+    img {
+      max-width: 350px;
+      border-radius: 50%;
+      box-shadow: $shadow;
+    }
+  }
+  article {
+    p {
+      font-size: 1.2em;
+      a {
+        text-decoration: none;
+        color: $turqoise;
+        font-weight: 600;
+      }
+    }
+  }
 }

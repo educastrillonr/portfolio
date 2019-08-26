@@ -10,33 +10,15 @@ const info: TileProps[] = [
     img: simon
   },
   {
-    demo: "2",
-    code: "2",
-    tags: ["2"],
-    img: "https://via.placeholder.com/300x169.png"
-  },
-  {
     demo: "https://app.hedira.io",
     code: "#",
     tags: ["react", "javascript", "scss", "firebase"],
     img: hedira
   },
   {
-    demo: "4",
-    code: "4",
-    tags: ["4"],
-    img: "https://via.placeholder.com/300x169.png"
-  },
-  {
-    demo: "5",
-    code: "5",
-    tags: ["5"],
-    img: "https://via.placeholder.com/300x169.png"
-  },
-  {
-    demo: "6",
-    code: "6",
-    tags: ["6"],
+    demo: "https://educastrillon.xyz",
+    code: "https://github.com/educastrillonr/portfolio",
+    tags: ["React", "Typescript", "scss"],
     img: "https://via.placeholder.com/300x169.png"
   }
 ];
