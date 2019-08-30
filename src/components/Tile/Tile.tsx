@@ -1,12 +1,6 @@
 import * as React from "react";
+import { TileProps } from "../../static/Interfaces/Interfaces";
 import styles from "./Tile.module.scss";
-
-export interface TileProps {
-  demo: string;
-  code: string;
-  tags: string[];
-  img: string;
-}
 
 export interface TileState {}
 

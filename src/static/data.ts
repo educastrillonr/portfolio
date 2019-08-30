@@ -1,4 +1,4 @@
-import { TileProps } from "../components/Tile/Tile";
+import { TileProps } from "../static/Interfaces/Interfaces";
 import hedira from "../assets/images/hedira.png";
 import simon from "../assets/images/simon.png";
 

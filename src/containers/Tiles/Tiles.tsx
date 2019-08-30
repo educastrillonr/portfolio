@@ -2,7 +2,7 @@ import * as React from "react";
 import Tile from "../../components/Tile/Tile";
 import styles from "./Tiles.module.scss";
 import info from "../../static/data";
-import { TileProps } from "../../components/Tile/Tile";
+import { TileProps } from "../../static/Interfaces/Interfaces";
 
 const Tiles: React.FC = () => {
   return (

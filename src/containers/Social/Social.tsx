@@ -4,7 +4,7 @@ import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope, faDownload } from "@fortawesome/free-solid-svg-icons";
 import styles from "./Social.module.scss";
 import { library } from "@fortawesome/fontawesome-svg-core";
-// import CV from "../../assets/CV.pdf";
+import CV from "../../assets/CV";
 
 library.add(faGithub, faLinkedin, faEnvelope, faDownload);
 
@@ -44,7 +44,7 @@ const Social: React.FC = () => {
           icon={["fas", "envelope"]}
         />
       </a>
-      <a href="{CV}" title="Download CV" target="_blank">
+      <a href={CV} title="Download CV" target="_blank">
         <FontAwesomeIcon
           className={styles.icon}
           size="2x"
