@@ -26,8 +26,18 @@ class Tile extends React.Component<TileProps, TileState> {
   getCode = () => {
     if (this.props.code !== "#") {
       return (
-        <a target="_blank" href={this.props.code}>
+        <a target="_blank" rel="noopener noreferrer" href={this.props.code}>
           code
+        </a>
+      );
+    }
+  };
+
+  getDemo = () => {
+    if (this.props.demo !== "#") {
+      return (
+        <a target="_blank" rel="noopener noreferrer" href={this.props.demo}>
+          demo
         </a>
       );
     }
@@ -39,9 +49,7 @@ class Tile extends React.Component<TileProps, TileState> {
         <img src={this.props.img} alt="" />
         <div className={styles.overlay} />
         <div className={styles.linksWrapper}>
-          <a target="_blank" href={this.props.demo}>
-            demo
-          </a>
+          {this.getDemo()}
           {this.getCode()}
         </div>
         {this.getTags()}

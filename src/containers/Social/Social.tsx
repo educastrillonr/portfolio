@@ -12,6 +12,7 @@ const Social: React.FC = () => {
   return (
     <aside className={styles.wrapper}>
       <a
+        rel="noopener noreferrer"
         href="https://github.com/educastrillonr"
         title="Github"
         target="_blank"
@@ -23,6 +24,7 @@ const Social: React.FC = () => {
         />
       </a>
       <a
+        rel="noopener noreferrer"
         href="https://www.linkedin.com/in/edu-c-romero"
         title="Linkedin"
         target="_blank"
@@ -34,6 +36,7 @@ const Social: React.FC = () => {
         />
       </a>
       <a
+        rel="noopener noreferrer"
         href="mailto:educastrillonr@gmail.com"
         title="Send me an email!"
         target="_blank"
@@ -44,7 +47,12 @@ const Social: React.FC = () => {
           icon={["fas", "envelope"]}
         />
       </a>
-      <a href="{CV}" title="Download CV" target="_blank">
+      <a
+        rel="noopener noreferrer"
+        href="{CV}"
+        title="Download CV"
+        target="_blank"
+      >
         <FontAwesomeIcon
           className={styles.icon}
           size="2x"

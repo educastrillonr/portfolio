@@ -11,7 +11,7 @@ const Header: React.FC = () => {
   return (
     <header className={styles.header}>
       <Link to="/">
-        <img className={styles.logo} src={logo} />
+        <img className={styles.logo} src={logo} alt="logo" />
       </Link>
       <nav>
         <Link to="/portfolio">Portfolio</Link>

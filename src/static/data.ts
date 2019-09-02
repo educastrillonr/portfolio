@@ -16,7 +16,7 @@ const info: TileProps[] = [
     img: hedira
   },
   {
-    demo: "https://educastrillon.xyz",
+    demo: "#",
     code: "https://github.com/educastrillonr/portfolio",
     tags: ["React", "Typescript", "scss"],
     img: "https://via.placeholder.com/300x169.png"

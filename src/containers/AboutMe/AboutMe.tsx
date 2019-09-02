@@ -25,7 +25,11 @@ const AboutMe: React.FC = () => {
           moved to Bristol, still working hospitality to sustain myself. I
           eventually decided change couldn't happen while I still worked in bars
           full time, so I commited to a full time coding bootcamp called{" "}
-          <a href="https://www.nology.io/" target="_blank">
+          <a
+            rel="noopener noreferrer"
+            href="https://www.nology.io/"
+            target="_blank"
+          >
             _nology
           </a>
           . Now I am looking to use the skills I've gained and be a part of the
