@@ -33,6 +33,9 @@
       }
     }
   }
+  .active {
+    background: $turqoise;
+  }
 }
 
 @media only screen and (min-width: 1310px) {
