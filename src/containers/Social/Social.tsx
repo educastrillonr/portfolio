@@ -4,7 +4,7 @@ import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope, faDownload } from "@fortawesome/free-solid-svg-icons";
 import styles from "./Social.module.scss";
 import { library } from "@fortawesome/fontawesome-svg-core";
-// import CV from "../../assets/CV.pdf";
+import CV from "../../assets/CV";
 
 library.add(faGithub, faLinkedin, faEnvelope, faDownload);
 
@@ -49,7 +49,7 @@ const Social: React.FC = () => {
       </a>
       <a
         rel="noopener noreferrer"
-        href="{CV}"
+        href={CV}
         title="Download CV"
         target="_blank"
       >
