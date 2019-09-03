@@ -3,21 +3,44 @@ import styles from "./Header.module.scss";
 import logo from "../../assets/images/logo.png";
 import { Link } from "@reach/router";
 
-const Header: React.FC = () => {
-  // const isActive: boolean = ({ isCurrent }: ) => {
-  //   return isCurrent ? { style: "background: rgb(88, 164, 176);" } : null;
-  // };
+const getLinks = () => {
+  return (
+    <>
+      <Link
+        getProps={linkProps => ({
+          className: linkProps.isCurrent ? styles.active : null
+        })}
+        to="/portfolio"
+      >
+        Portfolio
+      </Link>
+      <Link
+        getProps={linkProps => ({
+          className: linkProps.isCurrent ? styles.active : null
+        })}
+        to="/about-me"
+      >
+        About me
+      </Link>
+      <Link
+        getProps={linkProps => ({
+          className: linkProps.isCurrent ? styles.active : null
+        })}
+        to="/contact"
+      >
+        Contact
+      </Link>
+    </>
+  );
+};
 
+const Header: React.FC = () => {
   return (
     <header className={styles.header}>
       <Link to="/">
-        <img className={styles.logo} src={logo} />
+        <img className={styles.logo} src={logo} alt="logo" />
       </Link>
-      <nav>
-        <Link to="/portfolio">Portfolio</Link>
-        <Link to="/about-me">About me</Link>
-        <Link to="/contact">Contact</Link>
-      </nav>
+      <nav>{getLinks()}</nav>
     </header>
   );
 };

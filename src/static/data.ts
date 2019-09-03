@@ -1,6 +1,7 @@
 import { TileProps } from "../static/Interfaces/Interfaces";
 import hedira from "../assets/images/hedira.png";
 import simon from "../assets/images/simon.png";
+import logo from "../assets/images/logo.png";
 
 const info: TileProps[] = [
   {
@@ -16,10 +17,10 @@ const info: TileProps[] = [
     img: hedira
   },
   {
-    demo: "https://educastrillon.xyz",
+    demo: "#",
     code: "https://github.com/educastrillonr/portfolio",
     tags: ["React", "Typescript", "scss"],
-    img: "https://via.placeholder.com/300x169.png"
+    img: logo
   }
 ];
 
