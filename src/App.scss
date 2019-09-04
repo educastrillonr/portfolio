@@ -3,6 +3,7 @@
 .App {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   background: $dark-blue;
 }
 
@@ -15,7 +16,6 @@ div [tabindex] {
 @media only screen and (min-width: 1310px) {
   .App {
     flex-direction: row;
-    justify-content: space-between;
   }
   .main {
     width: 100%;
