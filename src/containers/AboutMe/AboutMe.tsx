@@ -20,10 +20,10 @@ const AboutMe: React.FC = () => {
       <article>
         <p>
           Going into hospitality taught me a lot about working in teams. All the
-          while, I always had a thought in the back of my mind that wanted to
-          work with technology. Eventually I decided to get back to coding on my
-          own, but I wasn't getting as much from that as I hoped, so I commited
-          to a full time coding bootcamp called{" "}
+          while, I always had a thought in the back of my mind that I wanted to
+          work with technology. Eventually, I decided to get back to coding on
+          my own, but I wasn't getting as much from that as I hoped, so I
+          commited to a full time coding bootcamp called{" "}
           <a
             rel="noopener noreferrer"
             href="https://www.nology.io/"
