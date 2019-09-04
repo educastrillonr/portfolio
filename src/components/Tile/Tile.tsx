@@ -1,10 +1,10 @@
 import * as React from "react";
-import { TileProps } from "../../static/Interfaces/Interfaces";
+import { ITile } from "../../static/Interfaces/Interfaces";
 import styles from "./Tile.module.scss";
 
 export interface TileState {}
 
-class Tile extends React.Component<TileProps, TileState> {
+class Tile extends React.Component<ITile, TileState> {
   // state = { :  }
 
   getTags = () => {
@@ -38,8 +38,13 @@ class Tile extends React.Component<TileProps, TileState> {
   };
 
   render() {
+    const size =
+      this.props.size === 2
+        ? { maxWidth: "300px", maxHeight: (300 / 16) * 9 + "px" }
+        : undefined;
+
     return (
-      <article className={styles.wrapper}>
+      <article className={styles.wrapper} style={size}>
         <img src={this.props.img} alt="" />
         <div className={styles.overlay} />
         <div className={styles.linksWrapper}>

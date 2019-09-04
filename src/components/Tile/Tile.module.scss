@@ -78,7 +78,7 @@
   li {
     list-style-type: none;
     border-radius: 3px;
-    font-size: 0.75em;
+    font-size: 0.7em;
     background: $black;
     color: white;
     text-transform: uppercase;
@@ -86,5 +86,12 @@
     min-width: 40px;
     padding: 0.25em 0.5em;
     margin-right: 0.5em;
+  }
+}
+
+@media only screen and (min-width: 1310px) {
+  .wrapper {
+    max-width: 600px;
+    max-height: 600 / 16 * 9px;
   }
 }

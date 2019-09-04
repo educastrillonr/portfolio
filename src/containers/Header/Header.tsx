@@ -1,6 +1,7 @@
 import * as React from "react";
 import styles from "./Header.module.scss";
 import logo from "../../assets/images/logo.png";
+import Social from "../Social/Social";
 import { Link } from "@reach/router";
 
 const getLinks = () => {
@@ -22,14 +23,6 @@ const getLinks = () => {
       >
         About me
       </Link>
-      <Link
-        getProps={linkProps => ({
-          className: linkProps.isCurrent ? styles.active : null
-        })}
-        to="/contact"
-      >
-        Contact
-      </Link>
     </>
   );
 };
@@ -37,10 +30,13 @@ const getLinks = () => {
 const Header: React.FC = () => {
   return (
     <header className={styles.header}>
-      <Link to="/">
-        <img className={styles.logo} src={logo} alt="logo" />
-      </Link>
-      <nav>{getLinks()}</nav>
+      <section className={styles.main}>
+        <Link to="/">
+          <img className={styles.logo} src={logo} alt="logo" />
+        </Link>
+        <nav>{getLinks()}</nav>
+      </section>
+      <Social />
     </header>
   );
 };
