@@ -11,7 +11,7 @@ const AboutMe: React.FC = () => {
             <h2>Eduardo Castrillon Romero</h2>
             <h3>Code & Me</h3>
             <p>
-              Having always loved tech, I enrolled on a CS Degree in Spain back
+              Having always loved tech, I enrolled on a CS degree in Spain back
               when I was 18. Eventually, I moved on to working hospitality full
               time.
             </p>
@@ -20,11 +20,12 @@ const AboutMe: React.FC = () => {
         </header>
         <article>
           <p>
-            Going into hospitality taught me a lot about working in teams. All
-            the while, I always had a thought in the back of my mind that I
-            wanted to work with technology. Eventually, I decided to get back to
-            coding on my own, but I wasn't getting as much from that as I hoped,
-            so I commited to a full time coding bootcamp called{" "}
+            Going into hospitality taught me a lot about working in teams,
+            problem solving, and understanding customers. All the while, I
+            always had a thought in the back of my mind that I wanted to work
+            with technology. Eventually, I decided to get back to coding on my
+            own, but I wasn't getting as much from that as I hoped. So I
+            commited to a full time coding bootcamp called{" "}
             <a
               rel="noopener noreferrer"
               href="https://www.nology.io/"
