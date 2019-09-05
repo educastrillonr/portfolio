@@ -3,7 +3,7 @@
 %tiles {
   padding: 1rem 0;
   display: grid;
-  grid-gap: 48px;
+  grid-gap: 56px;
   margin: 0 auto;
   margin-top: 60px;
   grid-template-columns: repeat(auto-fit, minmax(300px, 2fr));
@@ -24,7 +24,7 @@
 
   .tilesSmall {
     @extend %tiles;
-    margin-bottom: 4rem;
+    padding-bottom: 4rem;
   }
 }
 
@@ -36,7 +36,8 @@
     }
 
     .tilesSmall {
-      min-width: 650px;
+      // width: 100%;
+      min-width: 660px;
       grid-template-columns: repeat(auto-fit, minmax(300px, 2fr));
     }
   }

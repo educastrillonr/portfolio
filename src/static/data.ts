@@ -8,6 +8,7 @@ import calendar from "../assets/images/calendar.jpg";
 import tug from "../assets/images/tug.png";
 import morse from "../assets/images/morse.jpg";
 import todo from "../assets/images/todo.jpg";
+import lamp from "../assets/images/lamp.png";
 
 const info: TileProps = {
   featured: [
@@ -16,6 +17,12 @@ const info: TileProps = {
       code: "https://github.com/educastrillonr/minigame",
       tags: ["hmtl", "javascript", "jquery", "scss"],
       img: simon
+    },
+    {
+      demo: "https://lamps.educastrillon.xyz",
+      code: "https://github.com/educastrillonr/tinder-for-lamps",
+      tags: ["React", "JavaScript", "material-ui", "scss", "firebase"],
+      img: lamp
     },
     {
       demo: "https://app.hedira.io",
